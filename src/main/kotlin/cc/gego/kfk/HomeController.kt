@@ -5,15 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.beans.factory.annotation.Autowired
 
 @Controller
-@RequestMapping(value = "/")
+@RequestMapping("/")
 class HomeController {
-  @RequestMapping(value = "")
-  internal fun index() : String {
-    return "index"
-  }
+  @RequestMapping("")
+  internal fun index() : String = "index"
 
-  @RequestMapping(value = "/test")
-  internal fun test() : String {
-    return "index"
-  }
+  @RequestMapping("/test")
+  internal fun test() : String = "index"
 }

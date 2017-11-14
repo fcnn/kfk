@@ -17,6 +17,7 @@ buildscript {
 	}
 }
 
+apply plugin: 'application'
 apply plugin: 'kotlin'
 apply plugin: 'kotlin-spring'
 apply plugin: 'eclipse'
@@ -45,6 +46,17 @@ configurations {
   compile.exclude module: 'spring-boot-starter-tomcat'
   compile.exclude group: 'org.apache.tomcat'
 }
+
+mainClassName = 'cc.gego.kfk.KfkApplicationKt'
+
+defaultTasks 'run'
+
+kotlin {
+  experimental {
+    coroutines 'enable'
+  }
+}
+
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')

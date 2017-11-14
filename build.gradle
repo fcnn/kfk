@@ -35,7 +35,7 @@ compileTestKotlin {
 
 repositories {
 	mavenCentral()
-  maven { url "http://dl.bintray.com/kotlin/kotlin-eap-1.2" }
+	maven { url "http://dl.bintray.com/kotlin/kotlin-eap-1.2" }
 	maven { url "https://repo.spring.io/snapshot" }
 	maven { url "https://repo.spring.io/milestone" }
 }
@@ -50,9 +50,9 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-starter-webflux')
-  compile("org.springframework.boot:spring-boot-starter-jetty")
-	compile("org.jetbrains.kotlin:kotlin-stdlib-jre8")
-	compile("org.jetbrains.kotlin:kotlin-reflect")
+	compile("org.springframework.boot:spring-boot-starter-jetty")
+	compile("org.jetbrains.kotlin:kotlin-stdlib-jre8:1.2.0-rc-39")
+	compile("org.jetbrains.kotlin:kotlin-reflect:1.2.0-rc-39")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('io.projectreactor:reactor-test')
 }

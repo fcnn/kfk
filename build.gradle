@@ -67,8 +67,9 @@ dependencies {
 	testCompile('io.projectreactor:reactor-test')
 }
 
-task wrapper(type: Wrapper) {
-  gradleVersion = "4.10-rc-1"
-  distributionType = Wrapper.DistributionType.ALL
-}
+// gradle wrapper --distribution-type=all --gradle-version=5.0-milestone-1
+//task wrapper(type: Wrapper) {
+//  gradleVersion = "4.10-rc-1"
+//  distributionType = Wrapper.DistributionType.ALL
+//}
 
